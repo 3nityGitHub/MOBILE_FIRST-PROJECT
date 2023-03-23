@@ -22,9 +22,9 @@
 
   * License
 
-# HELLO MICROVERSE
+# MOBILE FIRST PROJECT
 
-> My first project at microverse with a simple message "Hello Microverse"
+> My second project at microverse showcasing my personal works to the world.
 
 ## Built With
 
@@ -63,8 +63,8 @@ You can deploy this project using:
 
 ## 🔭 Future Features 
 
-- Add a header with navigation links
-- Add backgroung to make it look more attractive
+- Add About me section, work cards section and contact me form
+- Add transitions to make it more interactive
 - Make it more accessible and responsive
 
 
