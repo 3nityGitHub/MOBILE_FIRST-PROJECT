@@ -161,3 +161,350 @@ a {
 .social_media_icons {
   list-style: none;
 }
+
+.flex {
+  display: flex;
+}
+
+.recent_works_section {
+  margin-left: 25px;
+}
+
+.recent_work_div {
+  flex-direction: column;
+  margin-top: 650px;
+  padding: 0;
+  gap: 0;
+}
+
+.recent_work_header {
+  margin-left: 24px;
+  width: 327px;
+  height: 83px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #1c1a19;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.image_line {
+  width: 327px;
+  height: 0;
+  border: 1px solid #212121;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 15px;
+  margin-left: 17px;
+}
+
+.img_placeholder {
+  width: 327px;
+  height: 237px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.multi_story {
+  width: 327px;
+  height: 36px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 20px;
+}
+
+.recent_work_content {
+  margin-top: 100px;
+  margin-left: 24px;
+}
+
+.recent_work_text {
+  margin-top: 25px;
+  width: 327px;
+  height: 147px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  order: 1;
+  flex-grow: 0;
+}
+
+.recent_work_language {
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  width: 260px;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.work_language {
+  align-items: center;
+  padding: 10px 12px;
+  width: 260px;
+  height: 40px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #8993a4;
+}
+
+.see_prjt_buttn {
+  font-family: 'Inter', sans-serif;
+  flex-direction: row;
+  align-items: center;
+  padding: 19px;
+  margin-top: 25px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  color: #fff5e1;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  text-align: center;
+  justify-content: center;
+  border: 1px;
+}
+
+.recent_work_container {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  gap: 24px;
+  width: 375px;
+  height: 1196px;
+}
+
+.first_project {
+  position: absolute;
+  background-image: url('image folder/ImgPlaceholder1.png');
+  margin: 45px 20px;
+  padding: auto;
+  background-repeat: no-repeat;
+}
+
+.first_project_title,
+.second_project_title,
+.third_project_title {
+  width: 295px;
+  height: 81px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin: 60px 10px;
+}
+
+.first_project_content,
+.second_project_content,
+.third_project_content {
+  width: 295px;
+  height: 87px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: -40px 10px;
+}
+
+.first_project_skill_list,
+.second_project_skill_list,
+.third_project_skill_list {
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  width: 236px;
+  height: 40px;
+  list-style: none;
+  margin-top: 70px;
+}
+
+.first_project_skills,
+.second_project_skills,
+.third_project_skills {
+  align-items: center;
+  padding: 10px 12px;
+  width: 261px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  margin-left: 10px;
+}
+
+.see_project_works,
+.see_project_works2,
+.see_project_works3 {
+  width: 327px;
+  height: 48px;
+  background: #ff6b00;
+  margin-top: 30px;
+  color: #fff5e1;
+  border: 1px;
+}
+
+.second_project {
+  position: absolute;
+  background-image: url('image folder/ImgPlaceholder1.png');
+  margin: 435px 20px;
+  padding: auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.third_project {
+  position: absolute;
+  background-image: url('image folder/ImgPlaceholder1.png');
+  margin: 835px 20px;
+  padding: auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.recent_work_container2 {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  gap: 24px;
+  width: 375px;
+  height: 1410px;
+}
+
+.About_me {
+  position: absolute;
+  width: 100%;
+  height: 1501px;
+  left: 0;
+  top: 4137px;
+  background: #1c1a19;
+  background-image: url("image folder/Frame.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20%;
+}
+
+.about_me_title {
+  width: 347px;
+  height: 79px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.about_me_content {
+  width: 327px;
+  height: 148px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin-top: 30px;
+}
+
+.get_resume {
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 19px;
+  gap: 10px;
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  color: #fff5e1;
+  margin-top: 40px;
+  border: 1px;
+  justify-content: center;
+}
+
+.about_me_container {
+  margin: 45px 40px;
+}
+
+.about_line {
+  width: 327px;
+  height: 9px;
+  position: absolute;
+  margin: 100px 50px;
+}
+
+.skill_list_container {
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px;
+  gap: 24px;
+  position: absolute;
+  width: 329px;
+  margin: 45px 45px;
+}
+
+.skill_list {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  list-style: none;
+  color: #fff;
+  width: 225.46px;
+  height: 281.46px;
+}
+
+.Language_skill {
+  width: 264px;
+  height: 24px;
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin-left: 90px;
+}
+
+.Language_skill2 {
+  width: 264px;
+  height: 24px;
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin-left: 90px;
+  margin-top: -50px;
+}
+
+.language {
+  width: 214px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
