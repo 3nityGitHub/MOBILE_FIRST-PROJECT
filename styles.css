@@ -168,6 +168,7 @@ a {
 
 .recent_works_section {
   margin-left: 25px;
+  margin-top: -500px;
 }
 
 .recent_work_div {
@@ -485,7 +486,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  margin-left: 90px;
+  margin-left: 60px;
 }
 
 .Language_skill2 {
@@ -495,7 +496,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  margin-left: 90px;
+  margin-left: 50px;
   margin-top: -50px;
 }
 
@@ -507,4 +508,15 @@ a {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+}
+
+.Language_skill3 {
+  width: 264px;
+  height: 24px;
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin-left: 130px;
+  margin-top: -50px;
 }
