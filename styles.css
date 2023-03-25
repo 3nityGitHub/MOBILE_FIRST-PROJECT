@@ -167,7 +167,7 @@ a {
 }
 
 .recent_works_section {
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: -500px;
 }
 
@@ -287,110 +287,123 @@ a {
   border: 1px;
 }
 
-.recent_work_container {
-  flex-direction: column;
-  align-items: center;
-  padding: 0 24px;
+.recent_project {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 24px;
-  width: 375px;
-  height: 1196px;
+  margin-left: 22px;
 }
 
-.first_project {
-  position: absolute;
-  background-image: url('image folder/ImgPlaceholder1.png');
-  margin: 45px 20px;
-  padding: auto;
+.project_background {
+  background: url('image folder/projects-background.png');
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 327px;
+  height: 400px;
+  position: relative;
 }
 
-.first_project_title,
-.second_project_title,
-.third_project_title {
-  width: 295px;
-  height: 81px;
-  font-family: 'Crete Round', sans-serif;
+.project_foreground {
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.work_content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  height: 386px;
+  width: 327px;
+  justify-content: flex-end;
+}
+
+.work_content h3 {
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  margin: 60px 10px;
 }
 
-.first_project_content,
-.second_project_content,
-.third_project_content {
-  width: 295px;
-  height: 87px;
+.work_content p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin: -40px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.first_project_skill_list,
-.second_project_skill_list,
-.third_project_skill_list {
+.project_tech {
+  margin: 30px -3px;
+}
+
+.project_tech ul {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
-  width: 236px;
-  height: 40px;
   list-style: none;
-  margin-top: 70px;
 }
 
-.first_project_skills,
-.second_project_skills,
-.third_project_skills {
-  align-items: center;
+.project_tech ul li a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
   padding: 10px 12px;
-  width: 261px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.24);
-  margin-left: 10px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  margin: 3px;
 }
 
-.see_project_works,
-.see_project_works2,
-.see_project_works3 {
-  width: 327px;
-  height: 48px;
+.card_bttn {
   background: #ff6b00;
-  margin-top: 30px;
-  color: #fff5e1;
-  border: 1px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: -30px;
+  width: 100%;
+  z-index: 10;
 }
 
-.second_project {
-  position: absolute;
-  background-image: url('image folder/ImgPlaceholder1.png');
-  margin: 435px 20px;
-  padding: auto;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.card_bttn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
-.third_project {
-  position: absolute;
-  background-image: url('image folder/ImgPlaceholder1.png');
-  margin: 835px 20px;
-  padding: auto;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.see_prjt_buttn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
-.recent_work_container2 {
-  flex-direction: column;
-  align-items: center;
-  padding: 0 24px;
-  gap: 24px;
-  width: 375px;
-  height: 1410px;
+.see_prjt_buttn:active {
+  background: #e05304;
+  color: #fff;
 }
 
 .About_me {
@@ -403,6 +416,7 @@ a {
   background-image: url("image folder/Frame.png");
   background-repeat: no-repeat;
   background-position: 100% 20%;
+  margin-top: 200px;
 }
 
 .about_me_title {
