@@ -4,7 +4,7 @@
   box-sizing: border-box;
   height: auto;
 
-  /* border: solid red 0.5px; */
+  /* border: solid yellow 0.5px; */
 }
 
 body {
@@ -284,7 +284,17 @@ a {
   flex-grow: 0;
   text-align: center;
   justify-content: center;
-  border: 1px;
+}
+
+.see_prjt_buttn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.see_prjt_buttn:active {
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .recent_project {
@@ -378,7 +388,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
   border: none;
@@ -387,6 +397,7 @@ a {
   margin-top: -30px;
   width: 100%;
   z-index: 10;
+  transition: all 0.5s ease-in-out;
 }
 
 .card_bttn:hover {
@@ -395,15 +406,9 @@ a {
   color: #f55800;
 }
 
-.see_prjt_buttn:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
-.see_prjt_buttn:active {
+.card_bttn:active {
   background: #e05304;
-  color: #fff;
+  color: #f4f1f0;
 }
 
 .About_me {
@@ -459,6 +464,12 @@ a {
   margin-top: 40px;
   border: 1px;
   justify-content: center;
+}
+
+.get_resume:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .about_me_container {
