@@ -284,6 +284,8 @@ a {
   flex-grow: 0;
   text-align: center;
   justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
 .see_prjt_buttn:hover {
