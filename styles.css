@@ -647,9 +647,7 @@ a {
   margin-top: 40px;
   border: none;
   opacity: 1;
-
-  padding: clamp(0.75rem, 12px + 8vw ,1rem);
-
+  padding: clamp(0.75rem, 12px + 8vw, 1rem);
 }
 
 .get_in_touch_button {
@@ -668,9 +666,11 @@ a {
   border: 1px;
 }
 
-.get_in_touch_button::activate {
+.get_in_touch_button:active {
   transform: translateY(0.5);
   transition: transform 1s ease;
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .social_media_footer {
@@ -714,10 +714,7 @@ a {
   margin: 23px auto 8px;
   background: #0d151e;
   border-radius: 10px;
-
-
   opacity: 1;
-
 }
 
 .footer_line1 {
@@ -725,15 +722,8 @@ a {
   height: 1px;
 }
 
-
 .get_in_touch_button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
-
-.get_in_touch_button:active {
-  background: #e05304;
-  color: #f4f1f0;
-}
-
