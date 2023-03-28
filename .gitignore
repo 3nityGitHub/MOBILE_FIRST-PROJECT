@@ -2,3 +2,4 @@
 node_modules/
 # ignore test.md
 test.md
+.vscode/settings.json

@@ -560,7 +560,7 @@ a {
   padding-left: 24px;
   padding-right: 24px;
   gap: 58px;
-  background: #e5e5e5;
+  background: #fff;
   margin-top: 1650px;
 }
 
@@ -594,7 +594,6 @@ a {
 }
 
 .form_input_fnames {
-  background: #e5e5e5;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -617,7 +616,6 @@ a {
 }
 
 .form_input_email {
-  background: #e5e5e5;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -643,12 +641,15 @@ a {
   line-height: 1.5rem;
   display: flex;
   align-items: center;
-  color: #979493;
+  color: #3c3a39;
   width: 327px;
   height: 114px;
   margin-top: 40px;
   border: none;
   opacity: 1;
+
+  padding: clamp(0.75rem, 12px + 8vw ,1rem);
+
 }
 
 .get_in_touch_button {
@@ -667,12 +668,17 @@ a {
   border: 1px;
 }
 
+.get_in_touch_button::activate {
+  transform: translateY(0.5);
+  transition: transform 1s ease;
+}
+
 .social_media_footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  background: #e5e5e5;
+  background: #fff;
   padding-top: 20px;
   height: 72px;
 }
@@ -708,13 +714,17 @@ a {
   margin: 23px auto 8px;
   background: #0d151e;
   border-radius: 10px;
+
+
   opacity: 1;
+
 }
 
 .footer_line1 {
   background: #dfe1e6;
   height: 1px;
 }
+
 
 .get_in_touch_button:hover {
   background: #fff5e1;
@@ -726,3 +736,4 @@ a {
   background: #e05304;
   color: #f4f1f0;
 }
+
