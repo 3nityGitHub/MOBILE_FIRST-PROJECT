@@ -77,7 +77,6 @@ body {
   top: 70px;
   font-size: 32px;
   width: 100%;
-  height: 100%;
   gap: 0;
   transition: 0.5s;
   align-items: center;
@@ -599,11 +598,12 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 0.938rem;
-  line-height: 1.5rem;
+  line-height: 1rem;
   display: flex;
   align-items: center;
   color: #979493;
   width: 327px;
+  height: 20px;
   margin: auto;
   border: none;
   opacity: 1;
@@ -620,11 +620,12 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 0.938rem;
-  line-height: 1.5rem;
+  line-height: 1rem;
   display: flex;
   align-items: center;
   color: #979493;
   width: 327px;
+  height: 30px;
   margin-top: 20px;
   border: none;
   opacity: 1;
@@ -646,7 +647,9 @@ a {
   margin-top: 40px;
   border: none;
   opacity: 1;
+
   padding: clamp(0.75rem, 12px + 8vw ,1rem);
+
 }
 
 .get_in_touch_button {
@@ -711,9 +714,26 @@ a {
   margin: 23px auto 8px;
   background: #0d151e;
   border-radius: 10px;
+
+
+  opacity: 1;
+
 }
 
 .footer_line1 {
   background: #dfe1e6;
   height: 1px;
 }
+
+
+.get_in_touch_button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.get_in_touch_button:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
