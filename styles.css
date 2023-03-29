@@ -579,6 +579,8 @@ a {
 }
 
 .contact_me_form {
+  display: flex;
+  flex-direction: column;
   margin: 120px 0 0 20px;
   text-align: center;
   width: 327px;
@@ -657,12 +659,12 @@ a {
   width: 131px;
   height: 48px;
   background: #f55800;
-  flex: none;
+  
   order: 2;
   flex-grow: 0;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 30px 0px 0px 100px;
   border: 1px;
 }
 
