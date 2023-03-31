@@ -253,7 +253,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 9px;
   width: 314px;
   height: 40px;
@@ -321,11 +321,12 @@ a {
 }
 
 .project_foreground {
-  background: linear-gradient(
-    179.35deg,
-    rgba(38, 38, 38, 0) 0.85%,
-    rgba(38, 38, 38, 0.9) 84%
-  );
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -422,7 +423,6 @@ a {
   z-index: 10;
   transition: all 0.5s ease-in-out;
 }
-
 
 .card_bttn:hover {
   background: #fff5e1;
@@ -773,7 +773,7 @@ a {
   color: #f55800;
 }
 
-/* Desktop version*/
+/* Desktop version */
 
 @media screen and (min-width: 768px) {
   a {
@@ -815,14 +815,14 @@ a {
     width: 100%;
     margin-right: 10px;
     transition: 0.7s ease;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     align-items: center;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
   }
 
   .email_icon {
@@ -881,7 +881,7 @@ a {
   .h1_title {
     width: 35.38rem;
     height: 10rem;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -895,14 +895,14 @@ a {
   .h2_title {
     width: 566px;
     height: 24px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 2rem;
     line-height: 44px;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: #fff;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -911,7 +911,7 @@ a {
   .p_content {
     width: 566px;
     height: 123px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -936,7 +936,7 @@ a {
     margin-top: 0;
   }
 
-  /* Recent works*/
+  /* Recent works */
 
   .recent_work_div {
     display: flex;
@@ -969,19 +969,19 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 1156px;
     height: 448px;
     left: -1px;
-    top: 0px;
+    top: 0;
   }
 
   .recent_work_language {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 12px;
     width: 314px;
     height: 40px;
@@ -1000,7 +1000,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 448px;
     height: 348px;
@@ -1011,12 +1011,8 @@ a {
 
   .recent_project {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 24px;
     margin-top: 10rem;
-  }
-
-  .recent_project {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -1037,7 +1033,7 @@ a {
     transition: all 0.5s ease-in-out;
   }
 
-  .card_bttn1{
+  .card_bttn1 {
     display: none;
   }
 
@@ -1048,22 +1044,20 @@ a {
     background-size: cover;
     width: 95%;
     height: 385px;
-
-
     position: relative;
   }
 
   .project_foreground {
-    background: linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+    background:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      );
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
   }
 
   .work_content {
@@ -1110,7 +1104,7 @@ a {
   .About_me {
     width: 1440px;
     height: 1195px;
-    left: 0px;
+    left: 0;
     top: 2680px;
     background: #262626;
   }
@@ -1119,9 +1113,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px 0px;
+    padding: 100px 0;
     gap: 24px;
-    width: 566px;
     height: 582px;
     background-image: url('image folder/illustration/About_me_img.svg');
     background-repeat: no-repeat;
@@ -1132,7 +1125,7 @@ a {
   .about_me_title {
     width: 566px;
     height: 78px;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -1159,7 +1152,7 @@ a {
   .about_me_content {
     width: 566px;
     height: 148px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1182,7 +1175,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 289.46px;
     height: 281.46px;
@@ -1198,7 +1191,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 289.46px;
     height: 281.46px;
@@ -1213,7 +1206,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 289.46px;
     height: 281.46px;
@@ -1227,13 +1220,14 @@ a {
   .about_line {
     margin-top: -100px;
   }
+
   /* Form section */
 
   .form_container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 0px;
+    padding: 10px 0;
     gap: 24px;
     width: 1163px;
     height: 590px;
@@ -1245,7 +1239,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 4px;
     width: 684px;
     height: 330px;
@@ -1259,7 +1253,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 684px;
     height: 48px;
@@ -1343,7 +1337,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -1358,8 +1352,7 @@ a {
     order: 2;
     flex-grow: 0;
     color: #fff;
-    font-weight: 700;
-    margin: 0px 0px 0px 0px;
+    margin: 0 0 0 0;
     border: 1px;
     gap: 10px;
   }
@@ -1368,11 +1361,9 @@ a {
     width: 1440px;
   }
 
-
-
-  /*Animation and transition
+  /* Animation and transition
   .project_background:hover,
   .project_foreground:hover{
     transform: scale(1.1);
-  }*/
+  } */
 }
