@@ -12,6 +12,7 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [Collaborators](#collaborators)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -25,29 +26,29 @@
 
 > My second project at microverse showcasing my personal works to the world, starting with the mobile version first and proceeding to do the desktop version using media queries to make it responsive and work well on all platforms...
 
-## Built With
+## [Built With] <a name="built-with"></a>
 
 - HTML
 - CSS
 
 ## [Getting Started] <a name="getting-started"></a>
 To get a local copy up and running on your machine, follow these simple steps:
-### Prerequisites
+### [Prerequisites] <a name="prerequisites"></a>
 In order to run this project you need:
 
-### Setup
+### [Setup] <a name="setup"></a>
 Clone this repository to your desired folder:
 
-### Install
+### [Install] <a name="install"></a>
 Install this project with:
 
-### Usage
+### [Usage] <a name="usage"></a>
 To run the project, execute the following command:
 
-### Run tests
+### [Run tests] <a name="run-test"></a>
 To run tests, run the following command:
 
-### Deployment
+### [Deployment] <a name="deployment"></a>
 You can deploy this project using:
 
 
@@ -58,14 +59,14 @@ You can deploy this project using:
 - GitHub: (https://github.com/3nityGitHub)
 - Twitter: (https://twitter.com/tbarijohnson)
 
-## Collaborator
+## [Collaborators] <a name="collaborators"></a>
 
 - J.Garcia (https://github.com/JuniorGarciaRodriguez)
 
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features 
+## 🔭 [Future Features ] <a name="future-features"></a>
 
 - Add About me section, work cards section and contact me form
 - Add transitions to make it more interactive
@@ -74,22 +75,22 @@ You can deploy this project using:
 
 
 
-## 🤝 Contributing
+## 🤝 [Contributing] <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+## [Show your support] <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## [Acknowledgments] <a name="acknowledgements"></a>
 
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
 
-## 📝 License
+## 📝 [License] <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
