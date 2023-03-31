@@ -1042,18 +1042,17 @@ a {
   }
 
   .project_background {
+    position: relative;
     background: url('image folder/projects-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 95%;
     height: 385px;
-
-
-    position: relative;
   }
 
   .project_foreground {
+    position: relative;
     background: linear-gradient(
       179.35deg,
       rgba(38, 38, 38, 0) 0.85%,
@@ -1063,7 +1062,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
+    transition: transform 600ms cubic-bezier(.73,.59,0,.55);
+  }
+
+  .project_foreground:hover {
+    transform: scale(1.01);
+    transform-origin: 0 0;
+    z-index: 100000;
   }
 
   .work_content {
