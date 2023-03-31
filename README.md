@@ -22,9 +22,9 @@
 
   * License
 
-# MOBILE FIRST PROJECT
+# MOBILE FIRST PROJECT AND DESKTOP VERSION
 
-> My second project at microverse showcasing my personal works to the world.
+> My second project at microverse showcasing my personal works to the world, starting with the mobile version first and proceeding to do the desktop version using media queries to make it responsive and work well on all platforms...
 
 ## Built With
 
@@ -59,6 +59,11 @@ You can deploy this project using:
 - GitHub: (https://github.com/3nityGitHub)
 - Twitter: (https://twitter.com/tbarijohnson)
 
+## Collaborator
+
+- J.Garcia (https://github.com/JuniorGarciaRodriguez)
+
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features 
@@ -66,6 +71,7 @@ You can deploy this project using:
 - Add About me section, work cards section and contact me form
 - Add transitions to make it more interactive
 - Make it more accessible and responsive
+- Add media query to create the desktop version
 
 
 
