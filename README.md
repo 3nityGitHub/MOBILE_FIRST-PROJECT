@@ -26,7 +26,7 @@
 
 # [MOBILE FIRST PROJECT AND DESKTOP VERSION] <a name="about-project"></a>
 
-> My second project at microverse showcasing my personal works to the world, starting with the mobile version first and proceeding to do the desktop version using media queries to make it responsive to work well on all platforms...
+> My second project at microverse showcasing my personal works to the world, starting with the mobile version first and proceeding to do the desktop version using media queries to make it responsive so it works well on all platforms...
 
 ## [Built With] <a name="built-with"></a>
 
@@ -46,14 +46,13 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## [Getting Started] <a name="getting-started"></a>
-To get a local copy up and running on your machine, follow these simple steps:
-To get a local copy up and running cloning this repo `https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT.git`.
+To get a local copy up and running on your machine, you will need to cloning this repo `https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT.git`.
 
 
 
 ### [Prerequisites] <a name="prerequisites"></a>
 
-There are no known prerequisites to run this project. If you have any issues trying to run it, please kindly[open a ticket](../../issues/) to let me know and i will be glad to assist and also take your suggestions.
+There are no known prerequisites to run this project. If you have any issues trying to run it, please kindly [open a ticket](../../issues/) to let me know and i will be glad to assist and also take your suggestions.
 
 ### [Setup] <a name="setup"></a>
 Clone this repository to your desired folder:
