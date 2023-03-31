@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="image folder/Rapheal.JPEG" alt="logo" width="140"  height="auto" />
+  <img src="image folder/Rapheal.jpeg" alt="logo" width="140"  height="auto" />
   <br/>
 
 # Table of Contents
