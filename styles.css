@@ -323,11 +323,12 @@ a {
 }
 
 .project_foreground {
-  background: linear-gradient(
-    179.35deg,
-    rgba(38, 38, 38, 0) 0.85%,
-    rgba(38, 38, 38, 0.9) 84%
-  );
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1051,8 +1052,8 @@ a {
     cursor: pointer;
     width: 100%;
     z-index: 10;
+    opacity: 0;
     transition: all 0.5s ease-in-out;
-   
   }
 
   .project_background {
@@ -1067,11 +1068,12 @@ a {
 
   .project_foreground {
     position: relative;
-    background: linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+    background:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1117,19 +1119,13 @@ a {
     align-items: center;
     margin-bottom: 22px;
   }
- 
-  
+
   .project_foreground:hover {
     transform: scale(1.02);
     z-index: 10000;
+    background: transparent;
     cursor: pointer;
   }
-
-   .card_bttn {
-    opacity: 0;
-  }
-
- 
 
   .work_content,
   .project_tech {
@@ -1147,12 +1143,6 @@ a {
   .project_foreground:hover .card_bttn {
     opacity: 1;
   }
-
-  .project_foreground:hover {
-    background: transparent;
-    cursor: pointer;
-  }
-
 
   /* About me */
 
