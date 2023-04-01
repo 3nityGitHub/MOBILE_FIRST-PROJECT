@@ -323,12 +323,11 @@ a {
 }
 
 .project_foreground {
-  background:
-    linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+  background: linear-gradient(
+    179.35deg,
+    rgba(38, 38, 38, 0) 0.85%,
+    rgba(38, 38, 38, 0.9) 84%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1053,7 +1052,7 @@ a {
     width: 100%;
     z-index: 10;
     transition: all 0.5s ease-in-out;
-    opacity: 1;
+   
   }
 
   .project_background {
@@ -1068,12 +1067,11 @@ a {
 
   .project_foreground {
     position: relative;
-    background:
-      linear-gradient(
-        179.35deg,
-        rgba(38, 38, 38, 0) 0.85%,
-        rgba(38, 38, 38, 0.9) 84%
-      );
+    background: linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1119,25 +1117,42 @@ a {
     align-items: center;
     margin-bottom: 22px;
   }
-
+ 
+  
   .project_foreground:hover {
     transform: scale(1.02);
-    transform-origin: 0 0;
     z-index: 10000;
+    cursor: pointer;
+  }
+
+   .card_bttn {
+    opacity: 0;
+  }
+
+ 
+
+  .work_content,
+  .project_tech {
     opacity: 1;
+  }
+
+  .project_foreground:hover .work_content {
+    opacity: 0;
+  }
+
+  .project_foreground:hover .project_tech {
+    opacity: 0;
+  }
+
+  .project_foreground:hover .card_bttn {
+    opacity: 1;
+  }
+
+  .project_foreground:hover {
     background: transparent;
     cursor: pointer;
   }
 
-  .project_tech,
-  .work_content {
-    opacity: 1;
-  }
-
-  .project_tech:hover,
-  .work_content:hover {
-    opacity: 0;
-  }
 
   /* About me */
 
