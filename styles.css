@@ -321,11 +321,12 @@ a {
 }
 
 .project_foreground {
-  background: linear-gradient(
-    179.35deg,
-    rgba(38, 38, 38, 0) 0.85%,
-    rgba(38, 38, 38, 0.9) 84%
-  );
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,24 +389,6 @@ a {
 }
 
 .card_bttn {
-  background: #ff6b00;
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-top: -30px;
-  width: 100%;
-  z-index: 10;
-  transition: all 0.5s ease-in-out;
-}
-
-.card_bttn1 {
   background: #ff6b00;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -775,6 +758,19 @@ a {
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: auto;
+
+    /* border: solid yellow 0.5px; */
+  }
+
+  body {
+    max-width: 90rem;
+  }
+
   a {
     color: #fff;
     text-decoration: none;
@@ -783,8 +779,8 @@ a {
   .nav_bar {
     width: 1440px;
     height: 72px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -972,7 +968,7 @@ a {
     flex-direction: row;
     align-items: flex-start;
     padding: 0;
-    gap: 24px;
+    gap: 2px;
     width: 1156px;
     height: 448px;
     left: -1px;
@@ -1011,6 +1007,47 @@ a {
     flex-grow: 0;
   }
 
+  .multi_story {
+    width: 448px;
+    height: 48px;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+    margin-top: -10px;
+  }
+
+  .see_prjt_buttn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 124px;
+    height: 48px;
+    background: #f55800;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin-top: 5px;
+  }
+
+  .recent_work_text {
+    width: 448px;
+    height: 140px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+    margin-top: -5px;
+  }
+
   .recent_project {
     display: grid;
     gap: 24px;
@@ -1033,10 +1070,7 @@ a {
     width: 100%;
     z-index: 10;
     transition: all 0.5s ease-in-out;
-  }
-
-  .card_bttn1 {
-    display: none;
+    opacity: 0;
   }
 
   .project_background {
@@ -1046,16 +1080,17 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 95%;
-    height: 385px;
+    height: 395px;
   }
 
   .project_foreground {
     position: relative;
-    background: linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+    background:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1066,7 +1101,12 @@ a {
   .project_foreground:hover {
     transform: scale(1.01);
     transform-origin: 0 0;
-    z-index: 100000;
+    z-index: 10000;
+    opacity: 0;
+  }
+
+  .card_bttn:hover {
+    opacity: 1;
   }
 
   .work_content {
@@ -1111,11 +1151,12 @@ a {
   /* About me */
 
   .About_me {
-    width: 1440px;
+    width: 87rem;
     height: 1195px;
     left: 0;
     top: 2680px;
     background: #262626;
+    overflow: hidden;
   }
 
   .about_me_container {
