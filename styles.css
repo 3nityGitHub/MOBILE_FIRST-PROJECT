@@ -7,8 +7,10 @@
   /* border: solid yellow 0.5px; */
 }
 
+html,
 body {
-  max-width: 1440px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .nav_branding {
@@ -767,10 +769,6 @@ a {
     /* border: solid yellow 0.5px; */
   }
 
-  body {
-    max-width: 90rem;
-  }
-
   a {
     color: #fff;
     text-decoration: none;
@@ -810,7 +808,6 @@ a {
   .nav_link {
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-right: 10px;
     transition: 0.7s ease;
     font-family: 'Inter', sans-serif;
@@ -853,16 +850,7 @@ a {
     display: none;
   }
 
-  .main_section {
-    background-color: #1c1a19;
-    background-image: url('./image folder/Illustration-header.png');
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 800px;
-    padding: 0 24px;
-    color: white;
-  }
+  
 
   .main_section_div {
     display: flex;
@@ -870,8 +858,6 @@ a {
     align-items: center;
     padding: 12rem 0.5rem 12rem 12rem;
     gap: 24px;
-    width: 35.38rem;
-    height: 46.19rem;
     left: 143px;
     top: 72px;
   }
@@ -939,12 +925,11 @@ a {
   .recent_work_div {
     display: flex;
     flex-direction: row;
-    width: 56.25rem;
   }
 
   .image_line {
     margin-top: 2.81rem;
-    width: 60%;
+    width: 65%;
   }
 
   .recent_works_header {
@@ -1070,7 +1055,7 @@ a {
     width: 100%;
     z-index: 10;
     transition: all 0.5s ease-in-out;
-    opacity: 0;
+    opacity: 1;
   }
 
   .project_background {
@@ -1102,13 +1087,15 @@ a {
     transform: scale(1.01);
     transform-origin: 0 0;
     z-index: 10000;
-    opacity: 0;
-  }
-
-  .card_bttn:hover {
     opacity: 1;
   }
 
+  .project_foreground:hover {
+    opacity: 0;
+  }
+
+  
+  
   .work_content {
     display: flex;
     flex-direction: column;
@@ -1411,9 +1398,17 @@ a {
     width: 1440px;
   }
 
-  /* Animation and transition
-  .project_background:hover,
-  .project_foreground:hover{
-    transform: scale(1.1);
-  } */
+ }
+
+ @media screen and (min-width: 1297px) {
+
+ .main_section {
+    background-color: #1c1a19;
+    background-image: url('./image folder/Illustration-header.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 0 24px;
+    color: white;
+    overflow-x: hidden;
+  }
 }
