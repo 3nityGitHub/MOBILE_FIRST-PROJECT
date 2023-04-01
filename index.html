@@ -54,9 +54,9 @@
     </header>
     <section class="main_section">
     <div class="main_section_div">
-      <h1 class="h1_title">Hey There, I’m Rapheal!</h1>
+      <h1 class="h1_title">Hey There, <br> I’m Rapheal!</h1>
       <h2 class="h2_title">I am a Software Developer.</h2>
-      <p class="content">I can help you build a product, feature or website Look through some of my work and experience!
+      <p class="p_content">I can help you build a product, feature or website Look through some of my work and experience!
         If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     </div>
     <ul class="social_media_group">
@@ -78,15 +78,17 @@
 
   <div class="recent_work_content">
       <img class="img_placeholder" src="image folder/ImgPlaceholder.png" alt="frame">
-    <h3 class="multi_story">Multi-Post Stories</h3>
+    <div class="placeholder_content">
+      <h3 class="multi_story">Multi-Post Stories</h3>
     <p class="recent_work_text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-    <ul class="recent_work_language flex">
+    <ul class="recent_work_language">
       <li class="work_language flex">CSS</li>
       <li class="work_language flex">HTML</li>
       <li class="work_language flex">Bootstrap</li>
       <li class="work_language flex">Ruby</li>
     </ul>
     <button type="button" class="see_prjt_buttn flex">See Project</button>
+    </div>
   </div>
 
 <div class="recent_project" id="project_cards">
@@ -216,13 +218,13 @@
     <h2 class="about_me_title">About me.</h2>
     <p class="about_me_content">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
 
-    <button type="button" class="get_resume flex">Get My Resume</button>
+    <button type="button" class="get_resume">Get My Resume</button>
   </div>
   <div class="about_line">
     <img src="image folder/Vector 4.png" alt="">
   </div>
-  <div class="skill_list_container flex">
-    <ul class="skill_list flex">
+  <div class="skill_list_container">
+    <ul class="skill_list1 flex">
                 <li class="Language_skill"><img class="border_line" src="image folder/Rectangle55.png" alt="rectangle_icon">   Language
                 </li>
                  <li class="language">JavaScript</li>
@@ -231,7 +233,7 @@
                 <li class="language">CSS</li>
 
             </ul>
-             <ul class="skill_list flex">
+             <ul class="skill_list2 flex">
                 <li class="Language_skill2"><img class="border_line" src="image folder/Rectangle56.png" alt="rectangle_icon">   Frameworks
                 </li>
                 <li class="language">React.js</li>
@@ -241,7 +243,7 @@
                 <li class="language">RSpec</li>
                 <li class="language">Capybara</li>
             </ul>
-             <ul class="skill_list flex">
+             <ul class="skill_list3 flex">
                 <li class="Language_skill3"><img class="border_line" src="image folder/Rectangle57.png" alt="rectangle_icon">  Skills
                 </li>
                 <li class="language">Database Mangement</li>
@@ -258,17 +260,19 @@
 
     <section id="form_container_link" class="form_section">
       <div class="form_container">
-        <h3 class="form_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in</h2>
+        <h3 class="form_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
 
         <form id="form_contact" class="contact_me_form" action="https://formspree.io/f/mnqygakk" method="POST">
 
            
-             <input class="form_input_fnames" name= "first_name" type="text" placeholder="Full name" maxlength="30" required>
-            <hr>
-
-            <input class="form_input_lnames" form="contact_form" name= "last_name" type="text" placeholder="Last name" maxlength="30" required>
+          <div class="form_name">
+               <input class="form_input_fnames" name= "first_name" type="text" placeholder="First name" maxlength="30" required>
             <hr class="lname_line">
 
+            <input class="form_input_lnames" form="contact_form" name= "last_name" type="text" placeholder="     Last name" maxlength="30" required>
+            <hr class="lname_line">
+
+          </div>
             
             <input class="form_input_email" id="email" name= "email" type="email" placeholder="  Email address" required>
             <hr>
