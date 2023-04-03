@@ -41,7 +41,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](coming soon)
+- [Live Demo](https://3nitygithub.github.io/MOBILE_FIRST-PROJECT/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,10 +90,12 @@ You can deploy this project using: [github pages](https://docs.github.com/en/pag
 
 ## 🔭 [Future Features ] <a name="future-features"></a>
 
-- Add About me section, work cards section and contact me form
-- Add transitions to make it more interactive
-- Make it more accessible and responsive
-- Add media query to create the desktop version
+-  [x] Add About me section, work cards section and contact me form
+-  [x] Add transitions to make it more attractive
+-  [x] Make it more accessible and responsive
+-  [x] Add media query to create the desktop version
+-  [x] Deploy webpage using github pages to make it visible on the web
+-  [] make the hamburger menu active with javascript
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
