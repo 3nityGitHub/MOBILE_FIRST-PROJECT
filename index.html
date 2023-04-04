@@ -266,22 +266,29 @@
 
            
           <div class="form_name">
+            <label for="first_name" class="required_field">
                <input class="form_input_fnames" name= "first_name" type="text" placeholder="First name" maxlength="30" required>
+            </label>
+              
             <hr class="lname_line">
-
-            <input class="form_input_lnames" form="contact_form" name= "last_name" type="text" placeholder="     Last name" maxlength="30" required>
-            <hr class="lname_line">
-
-          </div>
+            <label for="last_name" class="required_field2">
+              <input class="form_input_lnames" form="contact_form" name= "last_name" type="text" placeholder="     Last name" maxlength="30" required>
+            </label>
             
-            <input class="form_input_email" id="email" name= "email" type="email" placeholder="  Email address" required>
-            <hr>
+            <hr class="lname_line">
 
-            <textarea class="form_input_textarea" id="msg" name="message" cols="30" rows="5" placeholder=" Write me something..."maxlength="500" required></textarea> <br>
+            </div>
+            <label for="email" class="required_field3">
+               <input class="form_input_email" id="email" name= "email" type="email" placeholder="  Email address" required>
+            </label>
+           
+            <hr>
+            <label for="textarea" class="required_field4">
+              <textarea class="form_input_textarea" id="msg" name="message" cols="30" rows="5" placeholder=" Write me something..."maxlength="500" required></textarea>
+            </label>
+             <br>
             <button type="submit" name="submit" class="get_in_touch_button">Get in touch</button>
 
-
-   
         </form>
       </div>
         <div class="line_container">
