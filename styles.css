@@ -1407,6 +1407,29 @@ a {
     width: 1440px;
   }
 
+  .required_field::after {
+    content: ' *';
+    color: red;
+    float: left;
+  }
+
+  .required_field2::after {
+    content: ' *';
+    color: red;
+    float: left;
+  }
+
+  .required_field3::after {
+    content: ' *';
+    color: red;
+    float: left;
+  }
+
+  .required_field4::after {
+    content: ' *';
+    color: red;
+    float: left;
+  }
 
 }
 
