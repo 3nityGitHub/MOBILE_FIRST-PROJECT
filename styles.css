@@ -341,12 +341,11 @@ a {
 }
 
 .project_foreground {
-  background:
-    linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+  background: linear-gradient(
+    179.35deg,
+    rgba(38, 38, 38, 0) 0.85%,
+    rgba(38, 38, 38, 0.9) 84%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -891,6 +890,15 @@ a {
     flex: none;
     order: 0;
     flex-grow: 0;
+    transition: 1s ease-in-out;
+    transition-duration: 0.7s;
+  }
+
+  .h1_title:hover {
+    font-size: 90px;
+    word-spacing: 2px;
+    color: #9b9b9b;
+    font-weight: 900;
   }
 
   .h2_title {
@@ -1087,12 +1095,11 @@ a {
 
   .project_foreground {
     position: relative;
-    background:
-      linear-gradient(
-        179.35deg,
-        rgba(38, 38, 38, 0) 0.85%,
-        rgba(38, 38, 38, 0.9) 84%
-      );
+    background: linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;
