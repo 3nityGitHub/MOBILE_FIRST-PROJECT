@@ -39,7 +39,6 @@ body {
   padding: 12px 24px;
   width: 100%;
   min-height: 10px;
-
   z-index: 100;
 }
 
@@ -106,7 +105,6 @@ body {
 }
 
 .nav_menu2 li {
-
   border-bottom: 1px solid #dfe1e6;
   padding: 24px 4px 30px;
   align-items: center;
@@ -343,9 +341,12 @@ a {
 }
 
 .project_foreground {
-  background: linear-gradient(179.35deg,
+  background:
+    linear-gradient(
+      179.35deg,
       rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%);
+      rgba(38, 38, 38, 0.9) 84%
+    );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1085,9 +1086,12 @@ a {
 
   .project_foreground {
     position: relative;
-    background: linear-gradient(179.35deg,
+    background:
+      linear-gradient(
+        179.35deg,
         rgba(38, 38, 38, 0) 0.85%,
-        rgba(38, 38, 38, 0.9) 84%);
+        rgba(38, 38, 38, 0.9) 84%
+      );
     display: flex;
     flex-direction: column;
     justify-content: center;
