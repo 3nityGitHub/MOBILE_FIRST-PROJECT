@@ -10,7 +10,7 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .nav_branding {
@@ -103,9 +103,8 @@ body {
 
 .nav_menu2 li {
   border-bottom: 1px solid #dfe1e6;
-  padding: 24px 4px 0px;
+  padding: 24px 4px 0;
   align-items: center;
-  
 }
 
 a {
