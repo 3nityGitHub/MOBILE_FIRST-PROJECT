@@ -189,7 +189,7 @@ popupWindow.innerHTML += `<div class="modal_content">
 
                      <div class="popup_bttn" id="popup_bttn">
                       <a href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
-                       <a href="#">See source <img src="image folder/Vector.png" alt=""></a>
+                       <a href="#">See source <img src="image folder/Git-Vector.png" alt=""></a>
                      
                     </div>
 		          </div>          

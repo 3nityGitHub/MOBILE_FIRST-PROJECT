@@ -11,7 +11,6 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  
 }
 
 .nav_branding {
@@ -344,12 +343,11 @@ a {
 }
 
 .project_foreground {
-  background:
-    linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+  background: linear-gradient(
+    179.35deg,
+    rgba(38, 38, 38, 0) 0.85%,
+    rgba(38, 38, 38, 0.9) 84%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1003,10 +1001,7 @@ a {
     list-style: none;
     margin-left: -450px;
     margin-top: 220px;
-    
   }
-
- 
 
   .img_placeholder {
     width: 684px;
@@ -1021,7 +1016,7 @@ a {
     padding: 0;
     gap: 24px;
     width: 448px;
-   
+
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -1105,12 +1100,11 @@ a {
 
   .project_foreground {
     position: relative;
-    background:
-      linear-gradient(
-        179.35deg,
-        rgba(38, 38, 38, 0) 0.85%,
-        rgba(38, 38, 38, 0.9) 84%
-      );
+    background: linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1468,9 +1462,9 @@ a {
     float: left;
   }
 
-/*popup window*/
+  /*popup window*/
 
-.modal{
+  .modal {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1479,14 +1473,18 @@ a {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    background: hsl(0deg 3.95% 7% / 88%);
+    background-color: blur;
+
+    backdrop-filter: blur(5px);
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
-   
+
     transition: 200ms ease-in-out;
     transform: scale(0);
     z-index: 100;
-}
+  }
 
   .modal_content {
     display: flex;
@@ -1506,11 +1504,10 @@ a {
     margin: 20px 90px;
     transition: 200ms ease-in-out;
     transform: scale(1);
-    
   }
 
-  .modal.active{
-    transform:  scale(1);
+  .modal.active {
+    transform: scale(1);
   }
 
   .header_cancel h2 {
@@ -1612,11 +1609,11 @@ a {
     font-size: 1.25rem;
     font-weight: bold;
   }
-.popup_description{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
+  .popup_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
   .popup_description p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1647,21 +1644,18 @@ a {
     outline: none;
     cursor: pointer;
     background: #ff6b00;
- 
- }
+  }
 
-
-#overlay{
-  background-color: #172b4d;
-  opacity: 0;
-  height: 100vh;
-  pointer-events: none;
-}
-#overlay.active{
-  pointer-events: all;
-  opacity: 1;
-}
-
+  #overlay {
+    background-color: #172b4d;
+    opacity: 0;
+    height: 100vh;
+    pointer-events: none;
+  }
+  #overlay.active {
+    pointer-events: all;
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 1297px) {
