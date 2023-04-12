@@ -188,8 +188,8 @@ popupWindow.innerHTML += `<div class="modal_content">
                   <p>${popupArr.desc}</p>
 
                      <div class="popup_bttn" id="popup_bttn">
-                      <a href="#">See live <img src="image/Icon-see live.png" alt=""></a>
-                       <a href="#">See source <img src="image/Vector.png" alt=""></a>
+                      <a href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
+                       <a href="#">See source <img src="image folder/Vector.png" alt=""></a>
                      
                     </div>
 		          </div>          
