@@ -1645,9 +1645,6 @@ a {
   /* popup window */
 
   .modal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     position: fixed;
     left: 0;
     top: 0;
@@ -1669,7 +1666,7 @@ a {
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     height: 90%;
     width: 77%;
-    margin: 10px 90px;
+    margin: 20px 120px;
     transition: 200ms ease-in-out;
     transform: scale(1);
   }
@@ -1743,7 +1740,7 @@ a {
   }
 
   .popup_languages {
-    margin: -10px 0;
+    margin: -25px 0;
   }
 
   .popup_languages ul {
@@ -1784,7 +1781,7 @@ a {
 
   .close_Xbttn {
     cursor: pointer;
-    margin-left: 300px;
+    margin-left: 260px;
     outline: none;
     border: none;
     background: none;
