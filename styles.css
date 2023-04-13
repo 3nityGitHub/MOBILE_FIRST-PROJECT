@@ -785,11 +785,7 @@ a {
   align-items: center;
   position: fixed;
   left: 0;
-
-  /* right: 0; */
   top: 0;
-
-  /* bottom: 0; */
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
@@ -1182,8 +1178,7 @@ a {
     order: 2;
     flex-grow: 0;
     list-style: none;
-    margin-left: -450px;
-    margin-top: 220px;
+  
   }
 
   .img_placeholder {
@@ -1230,7 +1225,7 @@ a {
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin: 300px 300px 0 -315px;
+    margin: 0px 0px 0 0px;
   }
 
   .recent_work_text {
