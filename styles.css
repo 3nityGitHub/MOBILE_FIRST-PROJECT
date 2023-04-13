@@ -511,7 +511,6 @@ a {
   height: 9px;
   position: absolute;
   margin: 100px 50px;
-  overflow-x: hidden;
 }
 
 .skill_list_container {
@@ -776,6 +775,189 @@ a {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+}
+
+/* Mobile popup section */
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+
+  /* right: 0; */
+  top: 0;
+
+  /* bottom: 0; */
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+  z-index: 100;
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  height: 95%;
+  width: 90%;
+  margin: 50px auto;
+  transition: 200ms ease-in-out;
+  transform: scale(1);
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.header_cancel h3 {
+  width: 259px;
+
+  /* height: 82px; */
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-left: -5px;
+  padding-bottom: 20px;
+}
+
+.popup_image {
+  width: 311px;
+  height: 220px;
+  left: calc(50% - 659px / 2 - 224.5px);
+  top: 156px;
+  margin: 140px 0 0 0;
+}
+
+.popup_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  position: absolute;
+  width: 311px;
+  height: 100%;
+  right: 24px;
+  top: 156px;
+}
+
+.popup_description p {
+  width: 311px;
+  height: 288px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 210px;
+  padding-left: 10px;
+}
+
+.popup_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  position: absolute;
+  width: 311px;
+  height: 130px;
+  left: 24px;
+  top: 24px;
+}
+
+.header_cancel {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 311px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 20px;
+}
+
+.popup_languages {
+  margin: -30px -10px;
+}
+
+.popup_languages ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.popup_bttn .btn {
+  border: none;
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  background: #ff6b00;
+}
+
+.popup_languages ul li a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 12px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3c3a39;
+  margin: 3px;
+  border: 1px solid #979493;
+}
+
+.close_Xbttn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 8px 0 0 15px;
+}
+
+.popup-bttn {
+  display: flex;
+  flex-direction: row;
+
+  /* height: 100%; */
+  justify-content: start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    display: none;
+  }
 }
 
 /* Desktop version */
@@ -1297,6 +1479,8 @@ a {
 
   .about_line {
     margin-top: -100px;
+    position: absolute;
+    width: 1156px;
   }
 
   /* Form section */
@@ -1471,9 +1655,7 @@ a {
     align-items: center;
     position: fixed;
     left: 0;
-    right: 0;
     top: 0;
-    bottom: 0;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -1487,17 +1669,12 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     border: 1px solid black;
     background: #fff;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    height: 600px;
-    width: 1156px;
-    margin: 20px 90px;
+    height: 90%;
+    width: 77%;
+    margin: 10px 90px;
     transition: 200ms ease-in-out;
     transform: scale(1);
   }
@@ -1506,9 +1683,26 @@ a {
     transform: scale(1);
   }
 
+  .header_cancel h3 {
+    display: none;
+  }
+
+  .header_cancel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 12px;
+    width: 60%;
+    height: 40%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
   .header_cancel h2 {
-    width: 656px;
-    height: 40px;
+    width: 97%;
+    height: 40%;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1518,16 +1712,15 @@ a {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin-left: 5px;
   }
 
   .popup_image {
     position: absolute;
-    width: 650px;
-    height: 400px;
+    width: 60%;
+    height: 70%;
     left: calc(50% - 659px / 2 - 224.5px);
     top: 156px;
-    margin-left: 10px;
+    margin: 0 60px;
   }
 
   .popup_description {
@@ -1535,12 +1728,10 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    gap: 12px;
+    gap: 105px;
     position: absolute;
-    width: 424px;
+    width: 354px;
     height: 336px;
-    right: 24px;
-    top: 156px;
   }
 
   .popup_header {
@@ -1556,21 +1747,8 @@ a {
     top: 24px;
   }
 
-  .header_cancel {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    gap: 12px;
-    width: 1108px;
-    height: 40px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
   .popup_languages {
-    margin: -10px 5px;
+    margin: -10px 0;
   }
 
   .popup_languages ul {
@@ -1611,15 +1789,13 @@ a {
 
   .close_Xbttn {
     cursor: pointer;
-    margin-left: 400px;
+    margin-left: 300px;
     outline: none;
     border: none;
     background: none;
     font-size: 1.25rem;
     font-weight: bold;
   }
-
-
 
   .popup_description p {
     font-family: 'Inter', sans-serif;
@@ -1628,8 +1804,8 @@ a {
     font-size: 16px;
     line-height: 30px;
     color: #344563;
-    margin-top: -15px;
-    padding: 10px 15px;
+    margin: -15px -100px;
+    padding: 10px 5px;
   }
 
   .popup-bttn {
@@ -1637,7 +1813,6 @@ a {
     flex-direction: row;
     height: 100%;
     justify-content: start;
-    align-items: flex-start;
   }
 }
 

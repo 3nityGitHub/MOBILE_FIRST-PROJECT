@@ -152,19 +152,21 @@ for (let i = 0; i < projectsArr.length; i += 1) {
 
 const popupArr = {
   id: '_1',
+  heading: 'Multi Post Stories',
   name: 'Keeping track of hundreds  of components website',
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   featuredImg: 'image folder/popup image.png',
   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
   liveLink: '#',
-  sourceLink: '#',
+  sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
 };
 
 const popupWindow = document.querySelector('.modal');
 popupWindow.innerHTML += `<div class="modal_content">
    <div class="popup_header">
     <div class="header_cancel">
-               <h2>${popupArr.name}</h2>	
+               <h2>${popupArr.name}</h2>
+               <h3 class="mobile_heading">${popupArr.heading}</h3>	
 	    <button data-close-button class="close_Xbttn">&times;</button>
     </div>
       <div class="popup_languages">
@@ -188,8 +190,8 @@ popupWindow.innerHTML += `<div class="modal_content">
                   <p>${popupArr.desc}</p>
 
                      <div class="popup_bttn" id="popup_bttn">
-                      <a href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
-                       <a href="#">See source <img src="image folder/Git-Vector.png" alt=""></a>
+                      <a class="btn" href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
+                       <a class="btn" href="${popupArr.sourceLink}">See source <img src="image folder/Git-Vector.png" alt=""></a>
                      
                     </div>
 		          </div>          
@@ -198,18 +200,18 @@ popupWindow.innerHTML += `<div class="modal_content">
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
 
 openModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
+    
   });
 });
 
 closeModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
+    const modal = button.closest('#modal');
     closeModal(modal);
   });
 });
@@ -217,7 +219,7 @@ closeModalButtons.forEach((button) => {
 function openModal(modal) {
   if (modal === null) return;
   modal.classList.add('active');
-  overlay.classList.add('active');
+ 
 }
 
 function closeModal(modal) {
