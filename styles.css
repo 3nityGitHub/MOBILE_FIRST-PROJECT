@@ -112,6 +112,9 @@ body {
   font-size: 32px;
 }
 
+.nav_menu2 a:hover {
+  color: #f55800;
+}
 
 a {
   color: #fff;
