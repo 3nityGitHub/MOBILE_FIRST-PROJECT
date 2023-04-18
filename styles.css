@@ -11,6 +11,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 .nav_branding {
@@ -298,7 +299,7 @@ a {
   flex-direction: row;
   align-items: center;
   padding: 19px;
-  margin-top: 25px;
+  margin-top: 15px;
   gap: 10px;
   width: 124px;
   height: 48px;
@@ -311,7 +312,7 @@ a {
   justify-content: center;
   border: none;
   cursor: pointer;
-  margin-left: -320px;
+  margin-left: 0;
 }
 
 .see_prjt_buttn:hover {
@@ -801,8 +802,8 @@ a {
   align-items: center;
   background: #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  height: 95%;
   width: 90%;
+  height: 93%;
   margin: 50px auto;
   transition: 200ms ease-in-out;
   transform: scale(1);
@@ -812,87 +813,59 @@ a {
   transform: scale(1);
 }
 
-.header_cancel h3 {
-  width: 259px;
-
-  /* height: 82px; */
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-left: -5px;
-  padding-bottom: 20px;
-}
-
-.popup_image {
-  width: 311px;
-  height: 220px;
-  left: calc(50% - 659px / 2 - 224.5px);
-  top: 156px;
-  margin: 140px 0 0 0;
-}
-
-.popup_description {
+.popup_content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  gap: 12px;
-  position: absolute;
-  width: 311px;
+  width: 100%;
   height: 100%;
-  right: 24px;
-  top: 156px;
 }
 
-.popup_description p {
-  width: 311px;
-  height: 288px;
-  font-family: 'Inter', sans-serif;
+.header_cancel h3 {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-top: 210px;
-  padding-left: 10px;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.5rem + 10vw, 1.8rem);
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.popup_image_container {
+  width: 90%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.popup_image {
+  height: auto;
+  width: 100%;
+  left: 16px;
+  top: 170px;
+  border-radius: 0;
 }
 
 .popup_header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
+  align-content: space-between;
   gap: 12px;
-  position: absolute;
-  width: 311px;
-  height: 130px;
+  width: 100%;
+  height: 100%;
   left: 24px;
   top: 24px;
+  padding: 1rem 1.5rem;
 }
 
 .header_cancel {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   padding: 0;
-  gap: 12px;
-  width: 311px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 42px;
 }
 
 .popup_languages {
-  margin: -30px -10px;
+  width: 100%;
 }
 
 .popup_languages ul {
@@ -900,6 +873,7 @@ a {
   flex-direction: row;
   align-items: center;
   list-style: none;
+  width: 100%;
 }
 
 .popup_bttn .btn {
@@ -919,7 +893,7 @@ a {
 .popup_languages ul li a {
   text-decoration: none;
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px 12px;
+  padding: 6px 7px;
   display: block;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -938,16 +912,39 @@ a {
   background: none;
   font-size: 1.25rem;
   font-weight: bold;
-  margin: 8px 0 0 15px;
+  padding: 0.5rem;
 }
 
-.popup-bttn {
+.popup_description {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 8rem;
+  margin-right: 1.5rem;
+}
 
-  /* height: 100%; */
-  justify-content: start;
-  align-items: flex-start;
+.popup_description p {
+  height: 13.7rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-left: 25px;
+}
+
+.popup_bttn {
+  gap: 10rem;
+  margin: 47.6rem 1rem 1rem 1rem;
+  position: absolute;
 }
 
 @media screen and (max-width: 768px) {
@@ -974,7 +971,7 @@ a {
   }
 
   .nav_bar {
-    width: 1440px;
+    width: 100%;
     height: 72px;
     left: 0;
     top: 0;
@@ -1178,7 +1175,6 @@ a {
     order: 2;
     flex-grow: 0;
     list-style: none;
-  
   }
 
   .img_placeholder {
@@ -1225,7 +1221,7 @@ a {
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin: 0px 0px 0 0px;
+    margin: 0 0 0 0;
   }
 
   .recent_work_text {
@@ -1266,17 +1262,14 @@ a {
   }
 
   .project_background {
-    position: relative;
     background: url('image folder/projects-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 95%;
-    height: 395px;
+    width: 90%;
   }
 
   .project_foreground {
-    position: relative;
     background:
       linear-gradient(
         179.35deg,
@@ -1645,9 +1638,10 @@ a {
   /* popup window */
 
   .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    left: 0;
-    top: 0;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -1666,7 +1660,7 @@ a {
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     height: 90%;
     width: 77%;
-    margin: 20px 120px;
+    margin: 20px auto;
     transition: 200ms ease-in-out;
     transform: scale(1);
   }
@@ -1683,13 +1677,15 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 0;
     gap: 12px;
-    width: 60%;
+    width: 100%;
     height: 40%;
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin-bottom: 0;
   }
 
   .header_cancel h2 {
@@ -1698,49 +1694,35 @@ a {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5rem + 10vw, 1.8rem);
     line-height: 44px;
     color: #172b4d;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  }
+
+  .popup_image_container {
+    width: 88%;
+    height: auto;
+    margin-right: 2.5rem;
   }
 
   .popup_image {
-    position: absolute;
     width: 60%;
-    height: 70%;
-    left: calc(50% - 659px / 2 - 224.5px);
-    top: 156px;
-    margin: 0 60px;
-  }
-
-  .popup_description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    gap: 105px;
-    position: absolute;
-    width: 354px;
-    height: 336px;
   }
 
   .popup_header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
+    align-content: space-between;
     gap: 12px;
-    position: absolute;
-    width: 1108px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     left: 24px;
     top: 24px;
+    padding: 1rem 2.5rem;
   }
 
   .popup_languages {
-    margin: -25px 0;
+    width: 100%;
   }
 
   .popup_languages ul {
@@ -1748,20 +1730,8 @@ a {
     flex-direction: row;
     align-items: center;
     list-style: none;
-  }
-
-  .popup_bttn a {
-    border: none;
-    padding: 10px 12px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-    background: #ff6b00;
+    width: 100%;
+    margin-top: -1.2rem;
   }
 
   .popup_languages ul li a {
@@ -1789,7 +1759,21 @@ a {
     font-weight: bold;
   }
 
+  .popup_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    gap: 12px;
+    width: 20%;
+    height: 100%;
+    margin-top: 10.1rem;
+    margin-left: 37rem;
+  }
+
   .popup_description p {
+    height: 21rem;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1800,11 +1784,25 @@ a {
     padding: 10px 5px;
   }
 
-  .popup-bttn {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    justify-content: start;
+  .popup_bttn {
+    margin: 31.6rem 1rem 2rem 49rem;
+    width: 40rem;
+    height: 3rem;
+  }
+
+  .popup_bttn .btn {
+    border: none;
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    background: #ff6b00;
+    margin: 1.5rem;
   }
 }
 

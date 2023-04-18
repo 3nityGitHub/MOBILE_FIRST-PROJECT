@@ -145,7 +145,7 @@ const popupArr = {
   id: '_1',
   heading: 'Multi Post Stories',
   name: 'Keeping track of hundreds  of components website',
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   featuredImg: 'image folder/popup image.png',
   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
   liveLink: '#',
@@ -154,7 +154,9 @@ const popupArr = {
 
 const popupWindow = document.querySelector('.modal');
 popupWindow.innerHTML += `<div class="modal_content">
- <div class="popup_header">
+ 
+    <div class="popup_content">
+    <div class="popup_header">
  <div class="header_cancel">
  <h2>${popupArr.name}</h2>
  <h3 class="mobile_heading">${popupArr.heading}</h3>
@@ -175,16 +177,19 @@ popupWindow.innerHTML += `<div class="modal_content">
  </ul>
  </div>
  </div>
-    <div class="popup_content">
-          <img class="popup_image" src="${popupArr.featuredImg}" alt="">
+     <div class="popup_image_container">
+      <img class="popup_image" src="image folder/popup image.png" alt="">
+    </div>
               <div class="popup_description">
                   <p>${popupArr.desc}</p>
-
+                    </div>
+                    
                      <div class="popup_bttn" id="popup_bttn">
+                     
                       <a class="btn" href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
                        <a class="btn" href="${popupArr.sourceLink}">See source <img src="image folder/Git-Vector.png" alt=""></a>
                     </div>
-</div>
+
     </div>
     </div>`;
 
