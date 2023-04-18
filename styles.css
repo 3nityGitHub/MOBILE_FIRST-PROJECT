@@ -112,10 +112,6 @@ body {
   font-size: 32px;
 }
 
-.nav_menu2 a:hover {
-  color: #f55800;
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -346,11 +342,12 @@ a {
 }
 
 .project_foreground {
-  background: linear-gradient(
-    179.35deg,
-    rgba(38, 38, 38, 0) 0.85%,
-    rgba(38, 38, 38, 0.9) 84%
-  );
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -410,6 +407,10 @@ a {
   line-height: 20px;
   color: #fff;
   margin: 3px;
+}
+
+.nav_menu2 a:hover {
+  color: #f55800;
 }
 
 .card_bttn {
@@ -850,7 +851,6 @@ a {
     color: #f55800;
   }
 
-
   .hamburger_icon {
     display: none;
   }
@@ -1100,11 +1100,12 @@ a {
 
   .project_foreground {
     position: relative;
-    background: linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+    background:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      );
     display: flex;
     flex-direction: column;
     justify-content: center;
