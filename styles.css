@@ -344,12 +344,11 @@ a {
 }
 
 .project_foreground {
-  background:
-    linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+  background: linear-gradient(
+    179.35deg,
+    rgba(38, 38, 38, 0) 0.85%,
+    rgba(38, 38, 38, 0.9) 84%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -865,6 +864,7 @@ a {
 
 .popup_languages {
   width: 100%;
+  margin-top: 2rem;
 }
 
 .popup_languages ul {
@@ -1269,12 +1269,11 @@ a {
   }
 
   .project_foreground {
-    background:
-      linear-gradient(
-        179.35deg,
-        rgba(38, 38, 38, 0) 0.85%,
-        rgba(38, 38, 38, 0.9) 84%
-      );
+    background: linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1758,6 +1757,19 @@ a {
     font-weight: bold;
   }
 
+  .popup_image_paragraph {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+
+ .popup_description_footer {
+     display: flex;
+    flex-direction: column;
+    
+  }
+
   .popup_description {
     display: flex;
     flex-direction: column;
@@ -1767,8 +1779,6 @@ a {
     gap: 12px;
     width: 20%;
     height: 100%;
-    margin-top: 10.1rem;
-    margin-left: 37rem;
   }
 
   .popup_description p {

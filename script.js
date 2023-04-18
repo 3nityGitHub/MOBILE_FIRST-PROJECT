@@ -177,9 +177,14 @@ popupWindow.innerHTML += `<div class="modal_content">
  </ul>
  </div>
  </div>
+
+
+  <div class="popup_image_paragraph">
      <div class="popup_image_container">
       <img class="popup_image" src="image folder/popup image.png" alt="">
-    </div>
+     </div>
+
+        <div class="popup_description_footer">
               <div class="popup_description">
                   <p>${popupArr.desc}</p>
                     </div>
@@ -189,6 +194,8 @@ popupWindow.innerHTML += `<div class="modal_content">
                       <a class="btn" href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
                        <a class="btn" href="${popupArr.sourceLink}">See source <img src="image folder/Git-Vector.png" alt=""></a>
                     </div>
+                </div> 
+    </div>        
 
     </div>
     </div>`;
