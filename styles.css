@@ -11,6 +11,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  place-items: center;
 }
 
 .nav_branding {
@@ -111,6 +112,7 @@ body {
   font-size: 32px;
 }
 
+
 a {
   color: #fff;
   text-decoration: none;
@@ -188,8 +190,7 @@ a {
 /* Recent works and multiStories section */
 
 .recent_works_section {
-  margin-left: 15px;
-  margin-top: -500px;
+  margin-top: -32rem;
 }
 
 .recent_work_div {
@@ -342,12 +343,11 @@ a {
 }
 
 .project_foreground {
-  background:
-    linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    );
+  background: linear-gradient(
+    179.35deg,
+    rgba(38, 38, 38, 0) 0.85%,
+    rgba(38, 38, 38, 0.9) 84%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -502,7 +502,7 @@ a {
 }
 
 .about_me_container {
-  margin: 45px 40px;
+  margin: 2.8rem 1.5rem;
 }
 
 .about_line {
@@ -629,7 +629,6 @@ a {
 .contact_me_form {
   display: flex;
   flex-direction: column;
-  margin: 120px 0 0 20px;
   text-align: center;
   width: 327px;
   padding-top: 20px;
@@ -847,6 +846,7 @@ a {
   .nav_link:hover {
     color: #f55800;
   }
+
 
   .hamburger_icon {
     display: none;
@@ -1097,12 +1097,11 @@ a {
 
   .project_foreground {
     position: relative;
-    background:
-      linear-gradient(
-        179.35deg,
-        rgba(38, 38, 38, 0) 0.85%,
-        rgba(38, 38, 38, 0.9) 84%
-      );
+    background: linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;
