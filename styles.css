@@ -1659,7 +1659,7 @@ a {
 
   .modal_content {
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 3em;
     border: 1px solid black;
     background: #fff;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -1698,6 +1698,7 @@ a {
   .top_modal_content .desktop_heading {
     /* display: block; */
     margin: 0.5rem 0;
+    padding-top: 12px;
     font-weight: 600;
     color: #344563;
     height: 20px;
