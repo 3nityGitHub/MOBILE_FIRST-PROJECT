@@ -145,7 +145,7 @@ const popupArr = {
   id: '_1',
   heading: 'Multi Post Stories',
   name: 'Keeping track of hundreds  of components website',
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   featuredImg: 'image folder/popup image.png',
   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
   liveLink: '#',
@@ -153,52 +153,46 @@ const popupArr = {
 };
 
 const popupWindow = document.querySelector('.modal');
-popupWindow.innerHTML += `<div class="modal_content">
- 
-    <div class="popup_content">
-    <div class="popup_header">
- <div class="header_cancel">
- <h2>${popupArr.name}</h2>
- <h3 class="mobile_heading">${popupArr.heading}</h3>
+popupWindow.innerHTML += ` <div class="modal_content">
+            <div class="top_modal_content">
 
- <button data-close-button class="close_Xbttn">&times;</button>
- </div>
- <div class="popup_languages">
- <ul>
- <li>
- <a href="#">${popupArr.technologies[0]}</a>
- </li>
- <li>
- <a href="#">${popupArr.technologies[1]}</a>
- </li>
- <li>
- <a href="#">${popupArr.technologies[2]}</a>
- </li>
- </ul>
- </div>
- </div>
+                <div class="popup_header">
+                   <h2 class="desktop_heading">${popupArr.name}</h2>
+                   <h3 class="mobile_heading">${popupArr.heading}</h3>
+                    <button data-close-button class="close_Xbttn">&times;</button>
+                </div>
 
-
-  <div class="popup_image_paragraph">
-     <div class="popup_image_container">
-      <img class="popup_image" src="image folder/popup image.png" alt="">
+              <div class="header_tags">
+                <ul class="popup_languages list_tag" >
+                  <li class="popup_tags lang_tag"><a href="#">${popupArr.technologies[0]}</a></li>
+                  <li class="popup_tags lang_tag"><a href="#">${popupArr.technologies[1]}</a></li>
+                  <li class="popup_tags lang_tag"><a href="#">${popupArr.technologies[2]}</a></li>
+                </ul>
+              </div>
+          </div>
+      <div class="bottom_modal_content">
+              <div class="popup_image_container">
+                <img class="popup_image" src="image folder/popup image.png" alt="">
+              </div>
+        <div class="popup_description">
+              <div class="popup_text">
+              <p class="text_support text_details">${popupArr.desc}</p>
+               </div>
+          <div class="popup_button">
+              <section class="button">
+                <a href="#" class="btn">See live</a>
+                <img src="image folder/Icon-see live.png" alt="">
+              </section>
+              <section class="button">
+                <a href="${popupArr.sourceLink}" class="btn">See source</a>
+                <img src="image folder/Git-Vector.png" alt="">
+              </section>
+        </div>
      </div>
 
-        <div class="popup_description_footer">
-              <div class="popup_description">
-                  <p>${popupArr.desc}</p>
-                    </div>
-                    
-                     <div class="popup_bttn" id="popup_bttn">
-                     
-                      <a class="btn" href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
-                       <a class="btn" href="${popupArr.sourceLink}">See source <img src="image folder/Git-Vector.png" alt=""></a>
-                    </div>
-                </div> 
-    </div>        
-
     </div>
-    </div>`;
+
+  </div>`;
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
