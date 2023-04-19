@@ -1659,7 +1659,7 @@ a {
 
   .modal_content {
     padding: 1rem;
-    margin-top: 3em;
+    margin-top: 2rem;
     border: 1px solid black;
     background: #fff;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -1682,6 +1682,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.5rem;
   }
 
   .mobile_heading {
@@ -1696,7 +1697,6 @@ a {
   }
 
   .top_modal_content .desktop_heading {
-    /* display: block; */
     margin: 0.5rem 0;
     padding-top: 12px;
     font-weight: 600;
@@ -1723,7 +1723,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
-    padding: 0.4rem 0.4rem;
+    padding: 0.6rem 0.4rem;
     line-height: 20px;
     list-style: none;
     color: #091e42;
@@ -1752,7 +1752,6 @@ a {
 
   .close_Xbttn {
     cursor: pointer;
-    margin-left: 260px;
     outline: none;
     border: none;
     background: none;
@@ -1764,7 +1763,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
   }
 
   .popup_image_container {
