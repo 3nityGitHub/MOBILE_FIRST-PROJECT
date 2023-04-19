@@ -1697,6 +1697,7 @@ a {
   .top_modal_content .desktop_heading {
     /* display: block; */
     margin: 0.5rem 0;
+    padding-top: 12px;
     font-weight: 600;
     color: #344563;
     height: 20px;
