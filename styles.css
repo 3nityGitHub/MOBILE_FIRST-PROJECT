@@ -774,7 +774,7 @@ a {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  overflow-y: hidden;
+  overflow-y: scroll;
   padding: 1rem;
   transition: 200ms ease-in-out;
   transform: scale(0);
@@ -1764,12 +1764,12 @@ a {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-top: 3.5rem;
   }
 
   .popup_image_container {
     width: 100%;
     position: relative;
+    margin-top: 3rem;
   }
 
   .popup_image {
@@ -1781,7 +1781,7 @@ a {
   }
 
   .popup_description .popup_text {
-    padding-bottom: 3rem;
+    padding-bottom: rem;
   }
 
   .text_details {
