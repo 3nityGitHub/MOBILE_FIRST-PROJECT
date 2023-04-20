@@ -11,8 +11,6 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   place-content: center;
-
-
 }
 
 .nav_branding {
@@ -189,14 +187,13 @@ a {
 
 /* Recent works and multiStories section */
 
-
 .work_section {
   margin-left: 15px;
   margin-top: -500px;
+}
 
 .recent_works_section {
   margin-top: -32rem;
-
 }
 
 .recent_work_div {
@@ -396,13 +393,17 @@ a {
   margin: 30px -3px;
 }
 
+.popup_languages li a {
+  text-decoration: none;
+  color: #091e42;
+}
+
 .project_tech ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style: none;
 }
-
 
 .project_tech ul li a {
   text-decoration: none;
@@ -417,11 +418,6 @@ a {
   color: #fff;
   margin: 3px;
 }
-
-.nav_menu2 a:hover {
-  color: #f55800;
-}
-
 
 .card_bttn {
   background: #ff6b00;
@@ -789,6 +785,10 @@ a {
   color: #f55800;
 }
 
+.nav_menu2 a:hover {
+  color: #f55800;
+}
+
 /* Mobile popup section */
 
 .modal {
@@ -880,11 +880,6 @@ a {
   list-style: none;
 }
 
-.popup_languages li a {
-  text-decoration: none;
-  color: #091e42;
-}
-
 .popup_tags {
   box-sizing: border-box;
   align-items: center;
@@ -957,20 +952,6 @@ a {
   text-align: center;
   color: #fff;
   text-decoration: underline;
-}
-
-.project_tech ul li a {
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px 12px;
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  margin: 3px;
 }
 
 /* Desktop version */
