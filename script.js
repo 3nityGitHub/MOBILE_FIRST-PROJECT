@@ -227,3 +227,22 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
+
+
+//Form Validation
+
+const formValid = document.getElementById('form_contact');
+formValid.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailId = document.getElementById('email').value;
+
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+  const ErrorMsg = document.querySelector('.form_error_msg');
+  if (!regex.test(emailId)) {
+    ErrorMsg.innerHTML = 'Your email should not be in Uppercase!';
+  } else {
+    ErrorMsg.innerHTML =
+      'Congratulations! Your form was submitted successfully.';
+  }
+});
