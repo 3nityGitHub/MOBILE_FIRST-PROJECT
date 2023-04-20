@@ -10,14 +10,12 @@ hamburgerIcon.addEventListener('click', () => {
   navContainer.classList.toggle('active');
 });
 
-document.querySelectorAll('.nav_link').forEach((n) =>
-  n.addEventListener('click', () => {
-    hamburgerIcon.classList.remove('active');
-    navMenu.classList.remove('active');
-    navBranding.classList.remove('active');
-    navContainer.classList.remove('active');
-  })
-);
+document.querySelectorAll('.nav_link').forEach((n) => n.addEventListener('click', () => {
+  hamburgerIcon.classList.remove('active');
+  navMenu.classList.remove('active');
+  navBranding.classList.remove('active');
+  navContainer.classList.remove('active');
+}));
 
 // multistories project
 

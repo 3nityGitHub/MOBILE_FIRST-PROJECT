@@ -889,7 +889,7 @@ a {
 }
 
 .popup_description .text-details {
-  margin-top: 1rem;
+  margin-top: rem;
 }
 
 .text_support {
@@ -900,6 +900,10 @@ a {
   line-height: 24px;
   margin: 0;
   color: #091e42;
+}
+
+.popup_text {
+  margin-top: 2.5rem;
 }
 
 .popup_button {
