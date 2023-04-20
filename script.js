@@ -243,9 +243,7 @@ formValid.addEventListener('submit', (e) => {
   } else {
     formValid.submit();
     ErrorMsg.innerHTML = 'Congratulations! Your form was submitted successfully.';
-    
   }
 
   ErrorMsg.style.fontFamily = 'Poppins';
-  ErrorMsg.style.color = '##027e02';
 });
