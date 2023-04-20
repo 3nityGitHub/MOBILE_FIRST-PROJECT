@@ -888,9 +888,6 @@ a {
   width: 100%;
 }
 
-.popup_description .text-details {
-  margin-top: rem;
-}
 
 .text_support {
   font-family: 'Inter', sans-serif;
@@ -1784,9 +1781,6 @@ a {
     width: 70%;
   }
 
-  .popup_description .popup_text {
-    padding-bottom: rem;
-  }
 
   .text_details {
     line-height: 30px;
