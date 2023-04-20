@@ -11,6 +11,8 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   place-content: center;
+
+
 }
 
 .nav_branding {
@@ -81,7 +83,7 @@ body {
   opacity: 0;
   margin-top: 0;
   position: absolute;
-  background-color: #3c3a39;
+  background: #3c3a39;
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -102,7 +104,7 @@ body {
 }
 
 .nav_menu2 li {
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: 0.5px solid #dfe1e6;
   padding: 24px 10px 10px;
   align-items: center;
   font-family: 'Roboto', sans-serif;
@@ -112,7 +114,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #fff5e1;
   text-decoration: none;
 }
 
@@ -187,9 +189,14 @@ a {
 
 /* Recent works and multiStories section */
 
+
 .work_section {
   margin-left: 15px;
   margin-top: -500px;
+
+.recent_works_section {
+  margin-top: -32rem;
+
 }
 
 .recent_work_div {
@@ -396,6 +403,26 @@ a {
   list-style: none;
 }
 
+
+.project_tech ul li a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 12px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  margin: 3px;
+}
+
+.nav_menu2 a:hover {
+  color: #f55800;
+}
+
+
 .card_bttn {
   background: #ff6b00;
   padding: 12px;
@@ -489,7 +516,7 @@ a {
 }
 
 .about_me_container {
-  margin: 45px 40px;
+  margin: 2.8rem 1.5rem;
 }
 
 .about_line {
@@ -615,7 +642,6 @@ a {
 .contact_me_form {
   display: flex;
   flex-direction: column;
-  margin: 120px 0 0 20px;
   text-align: center;
   width: 327px;
   padding-top: 20px;
