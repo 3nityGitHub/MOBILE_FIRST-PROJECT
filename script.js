@@ -245,4 +245,6 @@ formValid.addEventListener('submit', (e) => {
     ErrorMsg.innerHTML =
       'Congratulations! Your form was submitted successfully.';
   }
+
+  ErrorMsg.style.fontFamily = 'Poppins';
 });
