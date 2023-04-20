@@ -55,61 +55,77 @@ stories.innerHTML += `<div class="recent_work_div flex">
 const projectsArr = [
   {
     id: '_1',
+    heading: 'Multi Post Stories',
     name: 'Profesional Art Printing Data',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard.",
     featuredImg: '',
-    technologies: ['html', 'bootstrap', 'ruby'],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
     liveLink: '#',
-    sourceLink: '#',
+    sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
   },
   {
     id: '_2',
+    heading: 'Multi Post Stories',
     name: 'Data Dashboard Healthcare',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
     featuredImg: '',
-    technologies: ['html', 'bootstrap', 'ruby'],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
     liveLink: '#',
-    sourceLink: '#',
+    sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
   },
   {
     id: '_3',
+    heading: 'Multi Post Stories',
     name: 'Website Portfolio',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
     featuredImg: '',
-    technologies: ['html', 'bootstrap', 'ruby'],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
     liveLink: '#',
-    sourceLink: '#',
+    sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
   },
   {
     id: '_4',
+    heading: 'Multi Post Stories',
     name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
     featuredImg: '',
-    technologies: ['html', 'bootstrap', 'ruby'],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
     liveLink: '#',
-    sourceLink: '#',
+    sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
   },
   {
     id: '_5',
+    heading: 'Multi Post Stories',
     name: 'Data Dashboard Healthcare',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
     featuredImg: '',
-    technologies: ['html', 'bootstrap', 'ruby'],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
     liveLink: '#',
-    sourceLink: '#',
+    sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
   },
   {
     id: '_6',
+    heading: 'Multi Post Stories',
     name: 'Website Portfolio',
-    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard ",
     featuredImg: '',
-    technologies: ['html', 'bootstrap', 'ruby'],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
     liveLink: '#',
-    sourceLink: '#',
+    sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
+  },
+  {
+    id: '_7',
+    heading: 'Multi Post Stories',
+    name: 'Keeping track of hundreds  of components website',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    featuredImg: 'image folder/popup image.png',
+    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+    liveLink: '#',
+    sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
   },
 ];
 
-for (let i = 0; i < projectsArr.length; i += 1) {
+for (let i = 0; i <= 5; i += 1) {
   const workCard = projectsArr[i];
   const projects = document.getElementById('project_cards');
   projects.innerHTML += `<div class="project_background">
@@ -141,57 +157,49 @@ for (let i = 0; i < projectsArr.length; i += 1) {
 
 // popup section
 
-const popupArr = {
-  id: '_1',
-  heading: 'Multi Post Stories',
-  name: 'Keeping track of hundreds  of components website',
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-  featuredImg: 'image folder/popup image.png',
-  technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-  liveLink: '#',
-  sourceLink: 'https://github.com/3nityGitHub/MOBILE_FIRST-PROJECT',
-};
+for (let h = 6; h < projectsArr.length; h += 1) {
+  const popupWindow = document.querySelector('.modal');
+  popupWindow.innerHTML += ` <div class="modal_content">
+            <div class="top_modal_content">
 
-const popupWindow = document.querySelector('.modal');
-popupWindow.innerHTML += `<div class="modal_content">
- 
-    <div class="popup_content">
-    <div class="popup_header">
- <div class="header_cancel">
- <h2>${popupArr.name}</h2>
- <h3 class="mobile_heading">${popupArr.heading}</h3>
+                <div class="popup_header">
+                   <h2 class="desktop_heading">${projectsArr[6].name}</h2>
+                   <h3 class="mobile_heading">${projectsArr[6].heading}</h3>
+                    <button data-close-button class="close_Xbttn">&times;</button>
+                </div>
 
- <button data-close-button class="close_Xbttn">&times;</button>
- </div>
- <div class="popup_languages">
- <ul>
- <li>
- <a href="#">${popupArr.technologies[0]}</a>
- </li>
- <li>
- <a href="#">${popupArr.technologies[1]}</a>
- </li>
- <li>
- <a href="#">${popupArr.technologies[2]}</a>
- </li>
- </ul>
- </div>
- </div>
-     <div class="popup_image_container">
-      <img class="popup_image" src="image folder/popup image.png" alt="">
-    </div>
-              <div class="popup_description">
-                  <p>${popupArr.desc}</p>
-                    </div>
-                    
-                     <div class="popup_bttn" id="popup_bttn">
-                     
-                      <a class="btn" href="#">See live <img src="image folder/Icon-see live.png" alt=""></a>
-                       <a class="btn" href="${popupArr.sourceLink}">See source <img src="image folder/Git-Vector.png" alt=""></a>
-                    </div>
+              <div class="header_tags">
+                <ul class="popup_languages list_tag" >
+                  <li class="popup_tags lang_tag"><a href="#">${projectsArr[6].technologies[0]}</a></li>
+                  <li class="popup_tags lang_tag"><a href="#">${projectsArr[6].technologies[1]}</a></li>
+                  <li class="popup_tags lang_tag"><a href="#">${projectsArr[6].technologies[2]}</a></li>
+                </ul>
+              </div>
+          </div>
+      <div class="bottom_modal_content">
+              <div class="popup_image_container">
+                <img class="popup_image" src="image folder/popup image.png" alt="">
+              </div>
+        <div class="popup_description">
+              <div class="popup_text">
+              <p class="text_support text_details">${projectsArr[6].desc}</p>
+               </div>
+          <div class="popup_button">
+              <section class="button">
+                <a href="#" class="btn">See live</a>
+                <img src="image folder/Icon-see live.png" alt="">
+              </section>
+              <section class="button">
+                <a href="${projectsArr[6].sourceLink}" class="btn">See source</a>
+                <img src="image folder/Git-Vector.png" alt="">
+              </section>
+        </div>
+     </div>
 
     </div>
-    </div>`;
+
+  </div>`;
+}
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
