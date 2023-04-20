@@ -243,6 +243,6 @@ formValid.addEventListener('submit', (e) => {
     ErrorMsg.innerHTML = 'Your email should not be in Uppercase!';
   } else {
     ErrorMsg.innerHTML =
-      'Congratulations! Your form was submitted successfully.';
+      '';
   }
 });
