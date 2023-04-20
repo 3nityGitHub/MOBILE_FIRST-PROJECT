@@ -228,8 +228,7 @@ closeModalButtons.forEach((button) => {
   });
 });
 
-
-//Form Validation
+// Form Validation
 
 const formValid = document.getElementById('form_contact');
 formValid.addEventListener('submit', (e) => {
@@ -242,8 +241,8 @@ formValid.addEventListener('submit', (e) => {
   if (!regex.test(emailId)) {
     ErrorMsg.innerHTML = 'Your email should not be in Uppercase!';
   } else {
-    ErrorMsg.innerHTML =
-      'Congratulations! Your form was submitted successfully.';
+    formValid.submit();
+    ErrorMsg.innerHTML = 'Congratulations! Your form was submitted successfully.';
   }
 
   ErrorMsg.style.fontFamily = 'Poppins';
