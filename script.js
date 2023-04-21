@@ -10,7 +10,7 @@ hamburgerIcon.addEventListener('click', () => {
   navContainer.classList.toggle('active');
 });
 
-document.querySelectorAll('.nav_link').forEach((n) => n.addEventListener('click', () => {
+document.querySelectorAll('.nav_link').forEach(() => n.addEventListener('click', () => {
   hamburgerIcon.classList.remove('active');
   navMenu.classList.remove('active');
   navBranding.classList.remove('active');
@@ -241,7 +241,7 @@ formValid.addEventListener('submit', (e) => {
   if (!regex.test(emailId)) {
     ErrorMsg.innerHTML = 'Your email should not be in Uppercase!';
   } else {
-    formValid.submit();
+    
     ErrorMsg.innerHTML = 'Congratulations! Your form was submitted successfully.';
   }
 
